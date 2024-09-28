@@ -3,6 +3,7 @@ Trabalho media queries
 
 
 Código HTML:
+
 O arquivo HTML é uma estrutura básica de uma página da web, contendo os seguintes elementos principais:
 
 Cabeçalho (header):
@@ -14,7 +15,8 @@ Galeria de Imagens: Exibe quatro imagens dentro de um div.
 Texto em Colunas: Contém três parágrafos de texto exibidos em colunas.
 Rodapé (footer)
 
-Código CSS
+Código CSS:
+
 O arquivo CSS define o estilo da página HTML, incluindo:
 
 Variáveis CSS (:root): Definem cores, tamanhos de fonte para dispositivos móveis e desktops.
