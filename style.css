@@ -1,0 +1,167 @@
+:root {
+  --fgcolor: #383838;
+  --bgcolor: #f0f0f0;
+  --mob_font_size: 24px;
+  --desktop_font_size: 12px;
+}
+
+/* reset */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+/* base */
+* {
+  color: var(--fgcolor);
+}
+body {
+  background-color: var(--bgcolor);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+/* mobile */
+p {
+  font-size: var(--mob_font_size);
+}
+
+nav ul li {
+  background-color: var(--fgcolor);
+  color: var(--bgcolor);
+  padding: 20px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: var(--mob_font_size);
+}
+
+header {
+  background: #cd0fb7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  margin-left: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.galeria {
+  margin: 20px;
+}
+
+.galeria .imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.imagens img {
+  width: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.texto {
+  margin: 30px;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 130, 139);
+}
+
+/* Media Queries */
+
+/* Estilos para impressão */
+@media print {
+  body {
+    background-color: var(--bgcolor);
+    color: black;
+  }
+  .menu,
+  footer {
+    display: none;
+  }
+  .galeria .imagens {
+    display: block;
+  }
+  .imagens img {
+    width: 100%;
+    height: auto;
+    page-break-inside: avoid; /* Para evitar quebra de página dentro das imagens */
+  }
+}
+
+/* Largura de dispositivos diferentes */
+@media (max-width: 600px) {
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .texto {
+    column-count: 1; /* Uma coluna em smartphones */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .galeria .imagens {
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas em tablets */
+  }
+
+  .texto {
+    column-count: 2; /* Duas colunas em tablets */
+  }
+}
+
+@media (min-width: 1025px) {
+  .galeria .imagens {
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas em desktops */
+  }
+
+  .texto {
+    column-count: 3; /* Três colunas em desktops */
+  }
+}
+
+/* Orientação */
+@media (orientation: landscape) {
+  header {
+    background: #a90cd4; /* Diferente em modo paisagem */
+  }
+}
+
+@media (orientation: portrait) {
+  header {
+    background: #cd0fb7; /* Diferente em modo retrato */
+  }
+}
