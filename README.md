@@ -25,10 +25,14 @@ Define cores de fundo, cores de texto, reset básico de margens e paddings, e es
 Layout Responsivo (Media Queries):
 
 Para dispositivos móveis (max-width: 600px): Menu exibido como blocos, texto em uma única coluna.
-Para tablets (601px a 1024px): Galeria de imagens em duas colunas e texto em duas colunas.
-Para desktops (min-width: 1025px): Galeria em quatro colunas e texto em três colunas.
-Para orientações de tela (retrato e paisagem): Alteração da cor do cabeçalho.
-Estilos de Impressão:
 
+Para tablets (601px a 1024px): Galeria de imagens em duas colunas e texto em duas colunas.
+
+Para desktops (min-width: 1025px): Galeria em quatro colunas e texto em três colunas.
+
+Para orientações de tela (retrato e paisagem): Alteração da cor do cabeçalho.
+
+Estilos de Impressão:
 Oculta o menu e o rodapé na impressão e ajusta a exibição das imagens da galeria para uma visualização mais adequada em papel.
+
 Este CSS organiza a página para diferentes dispositivos e condições, mantendo a responsividade e acessibilidade.
